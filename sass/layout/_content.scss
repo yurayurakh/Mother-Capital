@@ -1,0 +1,48 @@
+.block1 {
+  position: relative;
+  background: url("../img/bg-block1.jpg") center top no-repeat;
+  padding-bottom: 70px;
+
+  .tyotka {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 33%;
+  }
+  &__content {
+    padding-top: 50px;
+  }
+  &__why {
+    margin: 50px 0 130px;
+    .why {
+      margin: 0 0 25px 25px;
+      &-icon {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      &-text {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 24px;
+      }
+    }
+  }
+  &__today {
+    .title {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .today-calc {
+      color: #fff;
+      padding: 10px 20px;
+      background: linear-gradient(to top, #ff6600, #ffa200);
+      border-radius: 5px;
+      font-size: 30px;
+      font-family: $main_font_familyBold;
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+}

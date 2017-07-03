@@ -1,55 +1,42 @@
-$main_font_size: 14px;
-$main_font_color: #2b2b2b;
-$green_color: #3bb038;
-$red_color: #ee1b1b;
-$border_color: #34e32f;
-$main_font_family: 'Museo Sans Cyrl 300';
-$main_font_familyBold: 'Museo Sans Cyrl 900';
-$font_Cyrl_700: 'Museo Sans Cyrl 700';
+$main_font_size: 16px;
+$main_font_color: #2c2b2a;
+$orange_color: #ff6600;
+$main_font_family: 'PT-Sans';
+$main_font_familyBold: 'PTSansCaptionBold';
 $bg_color: #ffffff;
 $line_height: 1.5em;
 
-
 @font-face {
-  font-family:'Museo Sans Cyrl 300';
-  src: url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
-  url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
-  url('../fonts/MuseoSansCyrl-300.otf') format('opentype');
-  font-weight: 300;
+  font-family:'PT-Sans-Caption';
+  src: url('../fonts/PT-Sans-Caption-Bold.eot');
+  src: url('../fonts/PT-Sans-Caption-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PT-Sans-Caption-Bold.woff2') format('woff2'),
+  url('../fonts/PT-Sans-Caption-Bold.woff') format('woff'),
+  url('../fonts/PT-Sans-Caption-Bold.svg#PT-Sans-Caption-Bold') format('svg');
+  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U+0020-0525;
+  unicode-range: U+0020-2044;
 }
 
 @font-face {
-  font-family:'Museo Sans Cyrl 500';
-  src: url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
-  url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
-  url('../fonts/MuseoSansCyrl-500.otf') format('opentype');
+  font-family:'PT-Sans';
+  src: url('../fonts/PT-Sans.eot');
+  src: url('../fonts/PT-Sans.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PT-Sans.woff2') format('woff2'),
+  url('../fonts/PT-Sans.woff') format('woff'),
+  url('../fonts/PT-Sans.svg#PT-Sans') format('svg');
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U+0020-0525;
+  unicode-range: U+0020-F6CE;
 }
 
 @font-face {
-  font-family:'Museo Sans Cyrl 700';
-  src: url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
-  url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
-  url('../fonts/MuseoSansCyrl-700.otf') format('opentype');
-  font-weight: 600;
+  font-family:'PTSansCaptionBold';
+  src: url('../fonts/PTSansCaptionBold.ttf');
+  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U+0020-0525;
-}
-
-@font-face {
-  font-family:'Museo Sans Cyrl 900';
-  src: url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'),
-  url('../fonts/MuseoSansCyrl-900.woff') format('woff'),
-  url('../fonts/MuseoSansCyrl-900.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-0525;
+  unicode-range: U+0020-F6CE;
 }
