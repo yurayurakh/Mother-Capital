@@ -8,7 +8,7 @@
     position: absolute;
     bottom: 0;
     margin: 0 auto;
-    left: 33%;
+    left: 35%;
   }
   &__content {
     padding-top: 50px;
@@ -25,15 +25,18 @@
         display: inline-block;
         color: #ffffff;
         font-size: 24px;
+        //box-shadow: 0 3px 30px rgba(51,51,51,.1);
       }
     }
   }
   &__today {
     .title {
+      margin-left: 20px;
       font-size: 24px;
       margin-bottom: 15px;
     }
     .today-calc {
+      margin-left: 20px;
       color: #fff;
       padding: 10px 20px;
       background: linear-gradient(to top, #ff6600, #ffa200);
@@ -70,7 +73,7 @@
     text-align: center;
     position: relative;
     height: 305px;
-    width: 540px;
+    width: 100%;
     overflow:hidden;
   }
   .video-responsive iframe,
@@ -92,7 +95,7 @@
       .video-arrow {
         position: absolute;
         top: 50px;
-        left: 25%;
+        left: 8%;
       }
     }
     .video-question {
@@ -166,7 +169,7 @@
   }
 }
 .block5 {
-  height: 327px;
+  padding: 60px 0;
   background: url("../img/bg-block5.jpg") center top no-repeat;
   &-title {
     margin-bottom: 30px;
@@ -182,6 +185,6 @@
   &-text {
     text-align: center;
     font-size: 24px;
-    margin-bottom: 30pxx;
+    margin-bottom: 40px;
   }
 }
