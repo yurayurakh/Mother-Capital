@@ -31,7 +31,8 @@ section {
     outline: 0;
   }
   &:hover {
-    background: linear-gradient(to bottom,#ff6600,#ffa200);
+    background: linear-gradient(to top,#ff4e00,#ff8a00);
+    color: #ffffff;
   }
 }
 
@@ -94,7 +95,7 @@ section {
 }
 
 //PoPup
-#successModal {
+.modal {
   .modal-dialog {
     width: 30%;
     margin-top: 60px;
