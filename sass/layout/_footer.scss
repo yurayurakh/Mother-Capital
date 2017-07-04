@@ -1,0 +1,21 @@
+.footer {
+  background: #2c2b2a;
+  padding: 20px 0;
+  &__logo {
+    margin-top: 5px;
+  }
+  &__cop {
+    text-align: right;
+    color: #ffffff;
+    .cop-personal {
+      margin-bottom: 5px;
+      a {
+        color: #ffffff;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

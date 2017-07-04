@@ -7,19 +7,6 @@ $bg_color: #ffffff;
 $line_height: 1.5em;
 
 @font-face {
-  font-family:'PT-Sans-Caption';
-  src: url('../fonts/PT-Sans-Caption-Bold.eot');
-  src: url('../fonts/PT-Sans-Caption-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/PT-Sans-Caption-Bold.woff2') format('woff2'),
-  url('../fonts/PT-Sans-Caption-Bold.woff') format('woff'),
-  url('../fonts/PT-Sans-Caption-Bold.svg#PT-Sans-Caption-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2044;
-}
-
-@font-face {
   font-family:'PT-Sans';
   src: url('../fonts/PT-Sans.eot');
   src: url('../fonts/PT-Sans.eot?#iefix') format('embedded-opentype'),
@@ -34,7 +21,9 @@ $line_height: 1.5em;
 
 @font-face {
   font-family:'PTSansCaptionBold';
-  src: url('../fonts/PTSansCaptionBold.ttf');
+  src:  url('../fonts/PTSansCaptionBold.ttf'),
+        url('../fonts/PTSansCaptionBold.woff') format('woff'),
+        url('../fonts/PTSansCaptionBold.eot');
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;

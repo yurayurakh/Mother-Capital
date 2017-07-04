@@ -13,3 +13,20 @@
 .black-text {
   color: $main_font_color;
 }
+
+section {
+  padding: 70px 0;
+}
+
+.btn-orange {
+  border: none;
+  border-radius: 60px;
+  background: linear-gradient(to top,#ff6600,#ffa200);
+  font-size: 18px;
+  color: #ffffff;
+  box-shadow: 0 3px 30px rgba(255,102,0,.5);
+}
+
+.weight {
+  font-weight: bold;
+}
