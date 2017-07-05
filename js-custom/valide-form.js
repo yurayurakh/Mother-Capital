@@ -31,8 +31,11 @@
                 .done(function(msg){
                     if(msg === "OK"){
                         setTimeout(function(){
-                            $('.success-modal').click();
+                            $('.close-modal').click();
                         }, 500);
+                        setTimeout(function(){
+                            $('.success-modal').click();
+                        }, 1000);
                         setTimeout(function(){
                             $('.close-modal').click();
                         }, 4000);

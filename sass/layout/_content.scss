@@ -87,17 +87,7 @@
   }
   .video-descr {
     text-align: right;
-    .video-title {
-      margin-bottom: 65px;
-      position: relative;
-      font-size: 35px;
-      line-height: 48px;
-      .video-arrow {
-        position: absolute;
-        top: 50px;
-        left: 8%;
-      }
-    }
+
     .video-question {
       text-align: center;
       .question-title {
@@ -110,6 +100,17 @@
       .btn-question {
         padding: 14px 50px 16px;
       }
+    }
+  }
+  .video-title {
+    margin-bottom: 65px;
+    position: relative;
+    font-size: 35px;
+    line-height: 48px;
+    .video-arrow {
+      position: absolute;
+      top: 50px;
+      left: 8%;
     }
   }
 }

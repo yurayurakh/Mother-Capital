@@ -23,7 +23,8 @@ section {
   border: none;
   border-radius: 60px;
   background: linear-gradient(to top,#ff6600,#ffa200);
-  font-size: 18px;
+  font-size: 16px;
+  font-family: $main_font_familyBold;
   color: #ffffff;
   box-shadow: 0 3px 30px rgba(255,102,0,.5);
   transition: background .3s ease;
@@ -32,6 +33,7 @@ section {
   }
   &:hover {
     background: linear-gradient(to top,#ff4e00,#ff8a00);
+    box-shadow: 0 3px 30px rgba(255,78,0,.5);
     color: #ffffff;
   }
 }
@@ -46,7 +48,7 @@ section {
   text-align: center;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   background: #ffffff;
-  padding: 30px 20px;
+  padding: 30px 15px;
   &:before, &:after {
     display: inline-block;
     content: "";
@@ -88,6 +90,7 @@ section {
     text-align: center;
   }
   .btn-orange {
+    font-size: 16px;
     padding: 12px 26px;
     height: 50px;
     text-transform: uppercase;
@@ -97,7 +100,7 @@ section {
 //PoPup
 .modal {
   .modal-dialog {
-    width: 30%;
+    width: 40%;
     margin-top: 60px;
     border-bottom: 5px solid forestgreen;
     border-top: 5px solid forestgreen;
@@ -147,4 +150,28 @@ section {
 
 .success-modal {
   display: none;
+}
+
+#orderModal {
+  .modal-dialog {
+    border: 0;
+    .modal-header {
+      position: relative;
+      &:before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 220px;
+        height: 3px;
+        background: #f60;
+        top: 0;
+        margin: 0 auto;
+      }
+    }
+    .main-form:before {
+      display: none;
+    }
+  }
 }

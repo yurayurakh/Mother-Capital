@@ -5,6 +5,9 @@
       left: 32%;
     }
   }
+  .modal .modal-dialog {
+    width: 40%;
+  }
 }
 @media (min-width:768px) and (max-width:991px) {
   .block1   {
@@ -58,7 +61,112 @@
       text-align: center;
     }
   }
+  .modal .modal-dialog {
+    width: 50%;
+  }
 } 
 @media (max-width:767px) {
+  .block1 {
+    background: url(" ../img/bg-block1.jpg ") left top no-repeat;
+    .header__logo {
+      text-align: center;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        max-width: 380px;
+      }
+    }
+    .tyotka {
+      display: none;
+    }
+    &__content {
+      padding-top: 30px;
+      .main-title {
+        h1  {
+          text-align: center;
+        }
+      }
+    }
+    &__why {
+      margin-bottom: 70px;
+      .why {
+        margin-bottom: 40px;
+      }
+    }
+    &__today {
+      .title {
+        margin-bottom: 35px;
+      }
+      .today-calc {
+        margin-bottom: 70px;
+      }
+    }
+    .form {
+      .btn-orange {
+        padding: 12px 10px;
+      }
+    }
+  }
+  .block2 {
+    padding: 0 0 50px;
+    .advantage {
+      margin-bottom: 40px;
+    }
+  }
+  .block3 {
+    padding-top: 20px;
+    .video-arrow {
+      display: none;
+    }
+    .video-title {
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 30px;
+    }
+    .video-responsive {
+      margin-bottom: 30px;
+    }
+  }
+  .block4 {
+    padding-top: 0;
+  }
+  .block5 {
+    background: none;
+    padding-top: 0;
+    .form {
+      div:last-child {
+        text-align: center;
+      }
+    }
+  }
+  .footer {
+    &__logo {
+      text-align: center;
+      margin-bottom: 30px;
+      img {
+        max-width: 380px;
+        width: 100%;
+      }
+    }
+    &__cop {
+      .cop-personal {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .copyright {
+        text-align: center;
+      }
+    }
+  }
+  .modal .modal-dialog {
+    margin: 50px auto;
+    width: 70%;
+  }
+}
 
+@media (max-width:475px) {
+  .modal .modal-dialog {
+    margin: 30px auto;
+    width: 95%;
+  }
 }

@@ -9,7 +9,42 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="modal fade" id="successModal" tabindex="-1" role="dialog">
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">x</button>
+            </div>
+            <div class="modal-body">
+                <div class="main-form form">
+                    <h2 class="title">
+                        Бесплатная консультация
+                    </h2>
+                    <p>бесплатную консультацию со специалистом<br/>и мы ответим на все Ваши вопросы
+                    </p>
+                    <form class="form-horizontal" role="form" method="post">
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input type="text" name="name" class="form-control" placeholder="Как вас зовут?">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input type="submit" class="btn btn-default btn-orange" value="Получить консультацию">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -32,407 +67,414 @@
         </div>
     </div>
 </div>
-    <section class="block1">
-        <header class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-sm-6">
-                        <div class="header__logo logo">
-                            <a href="/"><img src="img/logo.png" alt="logo"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-offset-4 col-md-3 col-sm-5 col-sm-offset-1">
-                        <div class="header__contacts">
-                            <div class="contact">
-                                <div class="contact-icon">
-                                    <img src="img/tel-icon.png" alt="phone">
-                                </div>
-                                <div class="contact-text">
-                                    +7 (383) 2-111-111
-                                </div>
-                            </div>
-                            <div class="contact">
-                                <div class="contact-icon">
-                                    <img src="img/map-icon.png" alt="map-icon">
-                                </div>
-                                <div class="contact-text">
-                                    г. Новосибирск
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="tyotka">
-            <img src="img/dop-bg-block1.png" alt="tyotka">
-        </div>
-        <div class="block1__content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="main-title block1__title ">
-                            <h1 class="title">Материнский капитал</h1>
-                        </div>
-                        <div class="block1__why">
-                            <div class="why">
-                                <div class="why-icon">
-                                    <img src="img/orange-arrow.png" alt="orange-arrow">
-                                </div>
-                                <div class="why-text">
-                                    как получить
-                                </div>
-                            </div>
-                            <div class="why">
-                                <div class="why-icon">
-                                    <img src="img/orange-arrow.png" alt="orange-arrow">
-                                </div>
-                                <div class="why-text">
-                                    как использовать
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block1__today">
-                            <div class="col-sm-10 col-sm-offset-1">
-                                <div class="today-title">
-                                    <h2 class="title">Сегодня уже:</h2>
-                                </div>
-                                <div class="today-calc">
-                                    <div class="calc-text">
-                                        453 026 <span class="black-text">рублей</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0">
-                        <div class="main-form form">
-                            <h2 class="title">
-                                Закажите прямо сейчас
-                            </h2>
-                            <p>бесплатную консультацию со специалистом<br/>и мы ответим на все Ваши вопросы
-                            </p>
-                            <form class="form-horizontal" role="form" method="post">
-                                <div class="form-group">
-                                    <div class="col-xs-12">
-                                        <input type="text" name="name" class="form-control" placeholder="Как вас зовут?">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-xs-12">
-                                        <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-xs-12">
-                                        <input type="submit" class="btn btn-default btn-orange" value="Получить консультацию">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="block2">
+<section class="block1">
+    <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="advantage">
-                        <div class="advantage-title title">
-                            Что мы можем<br/>
-                            для вас сделать?
-                        </div>
-                        <div class="advantage-img">
-                            <img src="img/adv-img1.jpg" alt="">
-                        </div>
-                        <div class="advantage-text adva-big">
-                            Помочь в покупке жилья<br/>
-                            с привлечением<br/>
-                            материнского капитала
-                        </div>
+                <div class="col-md-5 col-sm-6">
+                    <div class="header__logo logo">
+                        <a href="/"><img src="img/logo.png" alt="logo"></a>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="advantage">
-                        <div class="advantage-title title">
-                            Выдать займ под деньги
-                            материнского капитала
+                <div class="col-md-offset-4 col-md-3 col-sm-5 col-sm-offset-1">
+                    <div class="header__contacts">
+                        <div class="contact">
+                            <div class="contact-icon">
+                                <img src="img/tel-icon.png" alt="phone">
+                            </div>
+                            <div class="contact-text">
+                                +7 (383) 2-111-111
+                            </div>
                         </div>
-                        <div class="advantage-img">
-                            <img src="img/adv-img2.jpg" alt="">
-                        </div>
-                        <div class="advantage-text">
-                            Вам не надо будет<br/>
-                            ждать их 2-3 месяца
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="advantage">
-                        <div class="advantage-title title">
-                            Бесплатно<br/>
-                            проконсультируем
-                        </div>
-                        <div class="advantage-img">
-                            <img src="img/adv-img3.jpg" alt="">
-                        </div>
-                        <div class="advantage-text">
-                            Поможем решить любой,<br/>
-                            сложный вопрос с жильем
+                        <div class="contact">
+                            <div class="contact-icon">
+                                <img src="img/map-icon.png" alt="map-icon">
+                            </div>
+                            <div class="contact-text">
+                                г. Новосибирск
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="block3">
+    </header>
+    <div class="tyotka">
+        <img src="img/dop-bg-block1.png" alt="tyotka">
+    </div>
+    <div class="block1__content">
         <div class="container">
             <div class="row">
-                <div class="col-sm-7">
-                    <div class="video-responsive">
-                        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/5FWdd-rlLi4" frameborder="0" allowfullscreen></iframe>
+                <div class="col-sm-6">
+                    <div class="main-title block1__title ">
+                        <h1 class="title">Материнский капитал</h1>
+                    </div>
+                    <div class="block1__why">
+                        <div class="why">
+                            <div class="why-icon">
+                                <img src="img/orange-arrow.png" alt="orange-arrow">
+                            </div>
+                            <div class="why-text">
+                                как получить
+                            </div>
+                        </div>
+                        <div class="why">
+                            <div class="why-icon">
+                                <img src="img/orange-arrow.png" alt="orange-arrow">
+                            </div>
+                            <div class="why-text">
+                                как использовать
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block1__today">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="today-title">
+                                <h2 class="title">Сегодня уже:</h2>
+                            </div>
+                            <div class="today-calc">
+                                <div class="calc-text">
+                                    453 026 <span class="black-text">рублей</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <div class="video-descr">
-                        <div class="video-title title">
-                            ПОСМОТРИ ВИДЕО<br/>
-                            О НАС
-                            <div class="video-arrow">
-                                <img src="img/white-arrow.png" alt="white-arrow">
+                <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0">
+                    <div class="main-form form">
+                        <h2 class="title">
+                            Бесплатная консультация
+                        </h2>
+                        <p>бесплатную консультацию со специалистом<br/>и мы ответим на все Ваши вопросы
+                        </p>
+                        <form class="form-horizontal" role="form" method="post">
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <input type="text" name="name" class="form-control" placeholder="Как вас зовут?">
+                                </div>
                             </div>
-                        </div>
-                        <div class="video-question">
-                            <div class="question-title title">
-                                Возникли вопросы?
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона">
+                                </div>
                             </div>
-                            <div class="question-text">
-                                Задайте свой вопрос прямо сейчас
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <input type="submit" class="btn btn-default btn-orange" value="Получить консультацию">
+                                </div>
                             </div>
-                            <a href="/" class="btn btn-orange btn-question title">Задать свой вопрос</a>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="block4">
-        <div class="container">
-            <div class="row">
-                <div class="block4-title title">
-                    <h2>
-                        Использование материнского капитала
-                    </h2>
+    </div>
+</section>
+<section class="block2">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="advantage">
+                    <div class="advantage-title title">
+                        Что мы можем<br/>
+                        для вас сделать?
+                    </div>
+                    <div class="advantage-img">
+                        <img src="img/adv-img1.jpg" alt="">
+                    </div>
+                    <div class="advantage-text adva-big">
+                        Помочь в покупке жилья<br/>
+                        с привлечением<br/>
+                        материнского капитала
+                    </div>
                 </div>
-                <div class="block4-descr">
-                    Как можно использовать:
+            </div>
+            <div class="col-sm-4">
+                <div class="advantage">
+                    <div class="advantage-title title">
+                        Выдать займ под деньги
+                        материнского капитала
+                    </div>
+                    <div class="advantage-img">
+                        <img src="img/adv-img2.jpg" alt="">
+                    </div>
+                    <div class="advantage-text">
+                        Вам не надо будет<br/>
+                        ждать их 2-3 месяца
+                    </div>
                 </div>
-                <div class="block4-use">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use1.png" alt="use1">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Покупка жилья</span><br/>
-                                (квартиры, дома, комнаты<br/>
-                                или доли в собственности)
-                            </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="advantage">
+                    <div class="advantage-title title">
+                        Бесплатно<br/>
+                        проконсультируем
+                    </div>
+                    <div class="advantage-img">
+                        <img src="img/adv-img3.jpg" alt="">
+                    </div>
+                    <div class="advantage-text">
+                        Поможем решить любой,<br/>
+                        сложный вопрос с жильем
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="block3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="video-title title hidden visible-xs">
+                    ПОСМОТРИ ВИДЕО<br>
+                    О НАС
+                    <div class="video-arrow">
+                        <img src="img/white-arrow.png" alt="white-arrow">
+                    </div>
+                </div>
+                <div class="video-responsive">
+                    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/5FWdd-rlLi4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="video-descr">
+                    <div class="video-title title hidden-xs">
+                        ПОСМОТРИ ВИДЕО<br/>
+                        О НАС
+                        <div class="video-arrow">
+                            <img src="img/white-arrow.png" alt="white-arrow">
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use2.png" alt="use2">
-                            </div>
-                            <div class="use-text">
+                    <div class="video-question">
+                        <div class="question-title title">
+                            Возникли вопросы?
+                        </div>
+                        <div class="question-text">
+                            Задайте свой вопрос прямо сейчас
+                        </div>
+                        <button data-toggle="modal" data-target="#orderModal" class="btn btn-orange btn-question title">Задать свой вопрос</button>                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="block4">
+    <div class="container">
+        <div class="row">
+            <div class="block4-title title">
+                <h2>
+                    Использование материнского капитала
+                </h2>
+            </div>
+            <div class="block4-descr">
+                Как можно использовать:
+            </div>
+            <div class="block4-use">
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use1.png" alt="use1">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Покупка жилья</span><br/>
+                            (квартиры, дома, комнаты<br/>
+                            или доли в собственности)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use2.png" alt="use2">
+                        </div>
+                        <div class="use-text">
                                 <span class="weight">Погашение ипотечного
                                 кредита</span>
-                                или другого<br/>
-                                кредита/займа, взятого<br/>
-                                с целью покупки жилья
-                            </div>
+                            или другого<br/>
+                            кредита/займа, взятого<br/>
+                            с целью покупки жилья
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use3.png" alt="use3">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Реконструкция и ремонт</span>
-                                (жилого дома с увеличением<br/>
-                                жилой площади
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use3.png" alt="use3">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Реконструкция и ремонт</span>
+                            (жилого дома с увеличением<br/>
+                            жилой площади
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use4.png" alt="use4">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Компенсация</span><br/>
-                                за строительство дома
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use4.png" alt="use4">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Компенсация</span><br/>
+                            за строительство дома
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use5.png" alt="use5">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Ремонт и строительство</span><br/>
-                                дома своими силами
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use5.png" alt="use5">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Ремонт и строительство</span><br/>
+                            дома своими силами
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use6.png" alt="use6">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Долевое строительство</span><br/>
-                                или участие в<br/>
-                                жилищно-строительных<br/>
-                                кооперативах
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use6.png" alt="use6">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Долевое строительство</span><br/>
+                            или участие в<br/>
+                            жилищно-строительных<br/>
+                            кооперативах
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use7.png" alt="use7">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Получение образования</span><br/>
-                                (ребенком (детьми)
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use7.png" alt="use7">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Получение образования</span><br/>
+                            (ребенком (детьми)
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use8.png" alt="use8">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Проживание студента</span><br/>
-                                в общежитии<br/>
-                                образовательного<br/>
-                                учреждения
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use8.png" alt="use8">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Проживание студента</span><br/>
+                            в общежитии<br/>
+                            образовательного<br/>
+                            учреждения
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use9.png" alt="use9">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Оплата услуг</span><br/>
-                                образовательного<br/>
-                                учреждения
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use9.png" alt="use9">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Оплата услуг</span><br/>
+                            образовательного<br/>
+                            учреждения
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use10.png" alt="use10">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Оплата содержания</span><br/>
-                                ребенка в детском саду
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use10.png" alt="use10">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Оплата содержания</span><br/>
+                            ребенка в детском саду
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use11.png" alt="use11">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Формирование</span><br/>
-                                накопительной<br/>
-                                пенсии мамы
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use11.png" alt="use11">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Формирование</span><br/>
+                            накопительной<br/>
+                            пенсии мамы
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="use">
-                            <div class="use-img">
-                                <img src="img/use12.png" alt="use12">
-                            </div>
-                            <div class="use-text">
-                                <span class="weight">Социальная адаптация</span><br/>
-                                детей-инвалидов
-                            </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="use">
+                        <div class="use-img">
+                            <img src="img/use12.png" alt="use12">
+                        </div>
+                        <div class="use-text">
+                            <span class="weight">Социальная адаптация</span><br/>
+                            детей-инвалидов
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="block5">
-        <div class="container">
-            <div class="row">
-                <div class="block5-title title">
-                    <h2>Материнский капитал сегодня <span>453 026 руб</span></h2>
+    </div>
+</section>
+<section class="block5">
+    <div class="container">
+        <div class="row">
+            <div class="block5-title title">
+                <h2>Материнский капитал сегодня <span>453 026 руб</span></h2>
+            </div>
+            <div class="block5-text">
+                Оставьте заявку для получения дополнительной информации:
+            </div>
+            <div class="block5-form">
+                <form class="form-vertical form" role="form" method="post">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Как вас зовут?">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-default btn-orange" value="Получить консультацию">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer__logo logo">
+                    <a href="/"><img src="img/white-logo.png" alt="logo"></a>
                 </div>
-                <div class="block5-text">
-                    Оставьте заявку для получения дополнительной информации:
-                </div>
-                <div class="block5-form">
-                    <form class="form-vertical form" role="form" method="post">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" placeholder="Как вас зовут?">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="form-group">
-                                <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="form-group">
-                                <input type="submit" class="btn btn-default btn-orange" value="Получить консультацию">
-                            </div>
-                        </div>
-                    </form>
+            </div>
+            <div class="col-md-6">
+                <div class="footer__cop">
+                    <div class="cop-personal">
+                        <a href="/">Положения об обработке персональных данных</a>
+                    </div>
+                    <div class="copyright">
+                        1994–2017 © Агентство недвижимости «КВАДРОТЕКА»
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="footer__logo logo">
-                        <a href="/"><img src="img/white-logo.png" alt="logo"></a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="footer__cop">
-                        <div class="cop-personal">
-                            <a href="/">Положения об обработке персональных данных</a>
-                        </div>
-                        <div class="copyright">
-                            1994–2017 © Агентство недвижимости «КВАДРОТЕКА»
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script
-            src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script src="js/common-min.js"></script>
+    </div>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/common-min.js"></script>
 </body>
 </html>
