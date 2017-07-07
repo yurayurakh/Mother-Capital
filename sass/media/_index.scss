@@ -1,12 +1,13 @@
 // Adaptive
 @media (min-width:992px) and (max-width:1199px) {
   .block1 {
+    background: url(" ../img/bg-block1.jpg ") left top no-repeat;
     .tyotka {
       left: 32%;
     }
   }
   .modal .modal-dialog {
-    width: 40%;
+    width: 30%;
   }
 }
 @media (min-width:768px) and (max-width:991px) {
@@ -16,10 +17,25 @@
       display: none;
     }
     &__why {
-      margin: 50px 0 80px;
+      background: 0;
+      margin-bottom: 0;
+      padding-bottom: 30px;
+      .why-text {
+        color: #ff4e00;
+      }
     }
     .btn-orange {
       padding: 12px 20px;
+    }
+    &__today {
+      .today-title {
+        h2 {
+          margin-left: 0;
+        }
+      }
+      .today-calc {
+        margin-left: 0;
+      }
     }
   }
   .block3 {
@@ -88,9 +104,11 @@
       }
     }
     &__why {
-      margin-bottom: 70px;
-      .why {
-        margin-bottom: 40px;
+      background: 0;
+      margin-bottom: 0;
+      padding-bottom: 30px;
+      .why-text {
+        color: #ff4e00;
       }
     }
     &__today {

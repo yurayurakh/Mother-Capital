@@ -6,21 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mother Capital</title>
-    <link rel="stylesheet" href="uncss/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="modal fade" id="orderModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <button class="close" type="button" data-dismiss="modal">x</button>
+                <button class="close close-modal" type="button" data-dismiss="modal">x</button>
             </div>
             <div class="modal-body">
                 <div class="main-form form">
                     <h2 class="title">
                         Бесплатная консультация
                     </h2>
-                    <p>бесплатную консультацию со специалистом<br/>и мы ответим на все Ваши вопросы
+                    <p>
+                        ответим на все ваши вопросы
                     </p>
                     <form class="form-horizontal" role="form" method="post">
                         <div class="form-group">
@@ -30,7 +31,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона">
+                                <input type="tel" name="phone" class="form-control tel" placeholder="Ваш номер телефона">
                             </div>
                         </div>
                         <div class="form-group">
@@ -63,7 +64,7 @@
             <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
                 <button data-toggle="modal" data-target="#myModal">Сохранить изменения</button></div>
             <!--Button click when form send data -->
-            <button data-toggle="modal" data-target="#successModal" class="success-modal">Сохранить изменения</button>
+            <button data-toggle="modal" data-target="#successModal" class="success-modal has-error has-success">Сохранить изменения</button>
         </div>
     </div>
 </div>
@@ -83,7 +84,7 @@
                                 <img src="img/tel-icon.png" alt="phone">
                             </div>
                             <div class="contact-text">
-                                +7 (383) 2-111-111
+                                <a href="tel:+7 (383) 2-111-111">+7 (383) 2-111-111</a>
                             </div>
                         </div>
                         <div class="contact">
@@ -99,71 +100,76 @@
             </div>
         </div>
     </header>
-    <div class="tyotka">
-        <img src="img/dop-bg-block1.png" alt="tyotka">
-    </div>
-    <div class="block1__content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="main-title block1__title ">
-                        <h1 class="title">Материнский капитал</h1>
-                    </div>
-                    <div class="block1__why">
-                        <div class="why">
-                            <div class="why-icon">
-                                <img src="img/orange-arrow.png" alt="orange-arrow">
+    <div class="container">
+        <div class="row">
+            <div class="tyotka">
+                <img src="img/dop-bg-block1.png" alt="tyotka">
+            </div>
+            <div class="block1__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="main-title block1__title ">
+                                <h1 class="title">Материнский капитал</h1>
                             </div>
-                            <div class="why-text">
-                                как получить
+                            <div class="block1__why">
+                                <div class="why">
+                                    <div class="why-icon">
+                                        <img src="img/orange-arrow.png" alt="orange-arrow">
+                                    </div>
+                                    <div class="why-text">
+                                        как получить
+                                    </div>
+                                </div>
+                                <div class="why">
+                                    <div class="why-icon">
+                                        <img src="img/orange-arrow.png" alt="orange-arrow">
+                                    </div>
+                                    <div class="why-text">
+                                        как использовать
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="why">
-                            <div class="why-icon">
-                                <img src="img/orange-arrow.png" alt="orange-arrow">
-                            </div>
-                            <div class="why-text">
-                                как использовать
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block1__today">
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <div class="today-title">
-                                <h2 class="title">Сегодня уже:</h2>
-                            </div>
-                            <div class="today-calc">
-                                <div class="calc-text">
-                                    453 026 <span class="black-text">рублей</span>
+                            <div class="block1__today">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="today-title">
+                                        <h2 class="title">Сегодня уже:</h2>
+                                    </div>
+                                    <div class="today-calc">
+                                        <div class="calc-text">
+                                            453 026 <span class="black-text">рублей</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0">
-                    <div class="main-form form">
-                        <h2 class="title">
-                            Бесплатная консультация
-                        </h2>
-                        <p>бесплатную консультацию со специалистом<br/>и мы ответим на все Ваши вопросы
-                        </p>
-                        <form class="form-horizontal" role="form" method="post">
-                            <div class="form-group">
-                                <div class="col-xs-12">
-                                    <input type="text" name="name" class="form-control" placeholder="Как вас зовут?">
-                                </div>
+                        <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0">
+                            <div class="main-form form">
+                                <h2 class="title">
+                                    Бесплатная консультация
+                                </h2>
+                                <p>
+                                    ответим на все ваши вопросы
+                                </p>
+                                <form class="form-horizontal" role="form" method="post">
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <input type="text" name="name" class="form-control" placeholder="Как вас зовут?">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <input type="tel" name="phone" class="form-control tel" placeholder="Ваш номер телефона">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <input type="submit" class="btn btn-default btn-orange" value="Получить консультацию">
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="form-group">
-                                <div class="col-xs-12">
-                                    <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-xs-12">
-                                    <input type="submit" class="btn btn-default btn-orange" value="Получить консультацию">
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -227,8 +233,8 @@
         <div class="row">
             <div class="col-sm-7">
                 <div class="video-title title hidden visible-xs">
-                    ПОСМОТРИ ВИДЕО<br>
-                    О НАС
+                    Материнский капитал</br>
+                    как получить
                     <div class="video-arrow">
                         <img src="img/white-arrow.png" alt="white-arrow">
                     </div>
@@ -240,8 +246,8 @@
             <div class="col-sm-5">
                 <div class="video-descr">
                     <div class="video-title title hidden-xs">
-                        ПОСМОТРИ ВИДЕО<br/>
-                        О НАС
+                        Материнский капитал</br>
+                        как получить
                         <div class="video-arrow">
                             <img src="img/white-arrow.png" alt="white-arrow">
                         </div>
@@ -436,7 +442,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="form-group">
-                            <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона">
+                            <input type="tel" name="phone" class="form-control tel" placeholder="Ваш номер телефона">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
@@ -460,7 +466,7 @@
             <div class="col-md-6">
                 <div class="footer__cop">
                     <div class="cop-personal">
-                        <a href="/">Положения об обработке персональных данных</a>
+                        <a href="//www.sasn.ru/about/personaldata/" target="_blank">Положения об обработке персональных данных</a>
                     </div>
                     <div class="copyright">
                         1994–2017 © Агентство недвижимости «КВАДРОТЕКА»
@@ -476,5 +482,10 @@
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/common-min.js"></script>
+<script>
+    $( document ).ready(function() {
+        $(".tel").mask("+7(999) 999-9999");
+    });
+</script>
 </body>
 </html>

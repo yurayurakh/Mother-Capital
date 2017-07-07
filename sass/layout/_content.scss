@@ -1,20 +1,31 @@
 .block1 {
   position: relative;
   background: url("../img/bg-block1.jpg") center top no-repeat;
-  padding: 0 0 70px 0;
+  padding: 0;
+  & > .container {
+    position: relative;
+  }
 
   .tyotka {
     z-index: 2;
     position: absolute;
     bottom: 0;
     margin: 0 auto;
-    left: 35%;
+    left: 29%;
+  }
+  &__title {
+    h1 {
+      margin-top: 35px;
+    }
   }
   &__content {
+    padding-bottom: 70px;
     padding-top: 50px;
   }
   &__why {
-    margin: 50px 0 130px;
+    padding: 50px 0 85px;
+    background: url("../img/podlozka.png") top left no-repeat;
+    //margin: 50px 0 115px;
     .why {
       margin: 0 0 25px 25px;
       &-icon {
@@ -25,18 +36,17 @@
         display: inline-block;
         color: #ffffff;
         font-size: 24px;
-        //box-shadow: 0 3px 30px rgba(51,51,51,.1);
       }
     }
   }
   &__today {
     .title {
-      margin-left: 20px;
+      margin-left: 30px;
       font-size: 24px;
       margin-bottom: 15px;
     }
     .today-calc {
-      margin-left: 20px;
+      margin-left: 30px;
       color: #fff;
       padding: 10px 20px;
       background: linear-gradient(to top, #ff6600, #ffa200);
@@ -44,6 +54,8 @@
       font-size: 30px;
       font-family: $main_font_familyBold;
       span {
+        position: relative;
+        top: 2px;
         font-size: 18px;
       }
     }
@@ -98,19 +110,25 @@
         margin-bottom: 20px;
       }
       .btn-question {
+        font-size: 18px;
         padding: 14px 50px 16px;
       }
     }
   }
   .video-title {
-    margin-bottom: 65px;
+    margin-bottom: 75px;
     position: relative;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 48px;
     .video-arrow {
       position: absolute;
-      top: 50px;
-      left: 8%;
+      top: 65px;
+      left: 0;
+      width: 142px;
+      height: 40px;
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -131,8 +149,8 @@
     margin-bottom: 40px;
   }
   .use {
+    display: table;
     margin: 0 auto 30px;
-    cursor: pointer;
     position: relative;
     height: 200px;
     width: 220px;
@@ -145,17 +163,9 @@
       width: 100%;
     }
     &-text {
+      display: table-cell;
       text-align: center;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      max-width: 95%;
-      max-height: 95%;
-      position: absolute;
-      height: 80px;
-      width: auto;
+      vertical-align: middle;
     }
     &:hover {
       background-image: linear-gradient(to bottom, #ff6600, #ffa200);
