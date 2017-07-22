@@ -101,6 +101,20 @@ section {
     height: 50px;
     text-transform: uppercase;
   }
+  label {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    a {
+      color: #2c2b2a;
+      text-decoration: underline;
+    }
+    input[type="checkbox"] {
+      position: relative;
+      top: 3px;
+      margin-right: 5px;
+    }
+  }
 }
 
 //PoPup

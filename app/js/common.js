@@ -39,13 +39,13 @@
                     if(msg === "OK"){
                         setTimeout(function(){
                             $('.close-modal').click();
-                        }, 500);
+                        }, 150);
                         setTimeout(function(){
                             $('.success-modal').click();
-                        }, 1000);
+                        }, 500);
                         setTimeout(function(){
                             $('.close-modal').click();
-                        }, 4000);
+                        }, 3000);
                     } else {
                         form.html(msg);
                     }
