@@ -479,6 +479,8 @@
         </div>
     </div>
 </section>
+<section class="block6" id="map">
+</section>
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -506,6 +508,177 @@
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/common-min.js"></script>
+<script type="text/javascript">
+
+    var map;
+    // Функция initMap которая отрисует карту на странице
+    function initMap() {
+
+        // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+        if (window.innerWidth > 992) {
+            map = new google.maps.Map(document.getElementById('map'), {
+                // При создании объекта карты необходимо указать его свойства
+                // center - определяем точку на которой карта будет центрироваться
+                center: {lat: 55.034735, lng: 82.906115},
+                // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+                zoom: 9,
+                zoomControl: true,
+                scaleControl: false,
+                scrollwheel: false,
+            });
+        } else {
+            map = new google.maps.Map(document.getElementById('map'), {
+                // При создании объекта карты необходимо указать его свойства
+                // center - определяем точку на которой карта будет центрироваться
+                center: {lat: 55.034409, lng: 82.911587},
+                // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+                zoom: 16,
+                zoomControl: true,
+                scaleControl: false,
+                scrollwheel: false,
+            });
+        }
+
+
+        // Создаем маркер на карте
+        var marker = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 55.034409, lng: 82.911587},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker2 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 55.034359, lng: 82.91134},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker3 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 55.041107, lng: 82.918741},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker4 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 55.057662, lng: 82.913728},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker5 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 54.935608, lng: 82.908069},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker6 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 55.161885, lng: 82.982449},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker7 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 55.110641, lng: 82.9394560},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker8 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 54.983946, lng: 82.898269},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker9 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 54.982773, lng: 82.8756779},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker10 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 55.031675, lng: 82.971086},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker11 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 54.974809, lng: 83.067663},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker12 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 54.838955, lng: 83.108204},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker13 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 54.862238, lng: 83.090032},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker14 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 54.764002, lng: 83.097236},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+        var marker15 = new google.maps.Marker({
+
+            // Определяем позицию маркера
+            position: {lat: 55.034818, lng: 82.9172184},
+
+            // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+            map: map,
+
+        });
+    };
+    </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 <script>
     $( document ).ready(function() {
         $(".tel").mask("+7(999) 999-9999");

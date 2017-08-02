@@ -30,15 +30,13 @@
             })
                 .done(function(msg){
                     if(msg === "OK"){
-                        setTimeout(function(){
-                            $('.close-modal').click();
-                        }, 150);
+                        $('.close-modal').click();
                         setTimeout(function(){
                             $('.success-modal').click();
-                        }, 500);
+                        }, 350);
                         setTimeout(function(){
                             $('.close-modal').click();
-                        }, 3000);
+                        }, 2500);
                     } else {
                         form.html(msg);
                     }
